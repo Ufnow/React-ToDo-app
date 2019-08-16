@@ -1,0 +1,56 @@
+$titlecolor: rgb(53, 53, 197);
+
+
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    align-items: center;
+    color: $titlecolor;
+    }
+
+.container {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-direction: column;
+    
+    // width: 400px;
+.collection-item {
+    // border-style: solid;
+    // border-width: 1px;
+    // width: 100%;
+    // margin:3px;
+    // &:hover {
+    // background:rgb(58, 58, 58);
+    
+}
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+}
+
+.High {
+    background-color: rgb(233, 115, 115);
+    &:hover {
+        background-color:rgb(202, 52, 52);}
+}
+.Medium {
+    background-color: rgb(231, 181, 44);
+    &:hover {
+        background-color:rgb(240, 149, 13);}
+}
+.Low {
+    background-color: rgb(138, 238, 118);
+    &:hover {
+        background-color:rgb(8, 219, 36);}
+}
