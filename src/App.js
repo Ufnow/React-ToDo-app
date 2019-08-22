@@ -70,7 +70,7 @@ filterTasks = (props) => {
 SortByDay(e){
 
  const postlist = this.state.tasks
- let newlist = postlist.reverse()
+ let newlist = postlist
  this.setState({
    postlist: newlist.sort((a, b) => (a.day > b.day) ? 1 : -1).reverse()
  })
@@ -139,9 +139,9 @@ return (
           <table className = "table"> 
           <thead>
             <tr>
-            <th onClick={(e) => {this.SortByName(e)}}>Task</th>
-            <th onClick={(e) => {this.SortByDay(e)}}>Day</th>
-            <th onClick={(e) => {this.SortByPriority(e)}}>Priority </th>
+            <th onClick={(e) => {this.SortByName(e)}}>Task  <i class="fa fa-angle-double-down"></i></th>
+            <th onClick={(e) => {this.SortByDay(e)}}>Day  <i class="fa fa-angle-double-down"></i></th>
+            <th onClick={(e) => {this.SortByPriority(e)}}>Priority  <i class="fa fa-angle-double-down"></i></th>
             </tr>
             </thead>
            <Tasks filteredTasks={filteredTasks} deleteTask={this.deleteTask} filterTasks={this.filterTasks}/>
