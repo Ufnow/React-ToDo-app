@@ -3,10 +3,11 @@ import React from 'react';
 
 
 
-const Tasks = ({tasks, deleteTask}) => {
+const Tasks = ({ deleteTask, filteredTasks}) => {
 
-  const taskList = tasks.length ? (
-    tasks.map(task => {
+  const taskList = filteredTasks.length ? ( 
+    
+    filteredTasks.map(task => {
       return (
         <tr className = {task.priority} key={task.id} onClick={() => {deleteTask(task.id -1)}}>
           <th>{task.name}</th>  
@@ -16,7 +17,7 @@ const Tasks = ({tasks, deleteTask}) => {
       )
     })
   ) : (
-    <p className="center">No tasks for today</p>
+    <tr><th className="center">No more tasks for today</th></tr>
   );
   return (
     <tbody>

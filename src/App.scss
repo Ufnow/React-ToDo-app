@@ -21,6 +21,8 @@ h1 {
     // justify-content: center;
     // align-items: center;
     // flex-direction: column;
+    flex-direction: column;
+    
     
     // width: 400px;
 .collection-item {
@@ -54,3 +56,43 @@ h1 {
     &:hover {
         background-color:rgb(8, 219, 36);}
 }
+
+
+.Buttons {
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+#buttons-cont{
+
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    width: 70%;
+    
+
+.btn {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px!important;
+    margin: 5px;
+   max-width: 30%;
+   min-width: 20%;
+ 
+    &:hover {
+        background-color:#17a2b8
+        
+}
+@media screen and (max-width:450px) {
+
+
+        size: 85%;
+        font-size: 75%;
+    
+    
+    } }   
+
+}
+}
+
